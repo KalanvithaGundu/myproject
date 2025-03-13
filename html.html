@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Code</title>
+    <script>
+        function doStuff() {
+            var f = document.forms['f'];
+            var value = f['task'].value;
+            var li = document.createElement('li');
+            li.innerText = value;
+            document.getElementById('mylist').appendChild(li);
+            f['task'].value = '';
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        Task:<input type="text" name="task"/><br/>
+        <input type="button" onclick="doStuff()" value="TO-DO"/>
+    </form>
+    <hr/>
+    <ul id="mylist"></ul>
+    <hr/>
+</body>
+</html>

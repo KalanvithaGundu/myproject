@@ -1,0 +1,182 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #481071;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    background-color: #d4c4c4;
+    color: #0a0505;
+}
+
+header .genres button {
+    margin: 0 5px;
+    padding: 8px 10px;
+    background-color: #800080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header .genres button:hover {
+    background-color: #9932cc;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 2;
+    background-color: #230028;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.left .anime {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.left .anime img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(210, 94, 239, 0.5);
+}
+
+.left .anime img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.left .anime p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d5b3e6;
+}
+
+.right {
+    flex: 1;
+    background: linear-gradient(135deg, #1c0020, #4b0082);
+    border: 2px solid #4b0082;
+    border-radius: 10px;
+    padding: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+}
+
+.right h3 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid #9932cc;
+    padding-bottom: 10px;
+}
+
+.right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #800080;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.right li:hover {
+    background-color: #9932cc;
+    transform: scale(1.05);
+}
+
+.right li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    margin-top: 5px;
+    font-size: 12px;
+    transform: translateY(35%);
+    padding-left: 5px;
+}
+
+.rating .star {
+    color: gold;
+    margin-right: 3px;
+}
+
+.rating .score {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #4b0082;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #9932cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/bg.jfif');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(213, 205, 205, 1.2);
+}
+
+header h1 {
+    text-align: center;
+    color: #9932cc;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #9932cc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4ecec;
+    color: #101010;
+}
+
+button {
+    background-color: #4b0082;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #9932cc;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+a {
+    color: #8e0ad1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c088db;
+    text-decoration: none;
+}
